@@ -1,4 +1,14 @@
 /** @type {import('next').NextConfig} */
-const nextConfig = {};
+const nextConfig = {
+  images: {
+    domains: ['assets.bettyblocks.com'],
+    remotePatterns: [{
+      protocol: 'https',
+      hostname: 'assets.bettyblocks.com',
+      port: '',
+      pathname: '*'
+    }]
+  },
+};
 
 export default nextConfig;
