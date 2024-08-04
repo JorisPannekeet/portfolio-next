@@ -9,6 +9,9 @@ const nextConfig = {
       pathname: '*'
     }]
   },
+  compiler: {
+    styledComponents: true,
+  },
 };
 
 export default nextConfig;
