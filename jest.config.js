@@ -6,8 +6,7 @@ module.exports = {
   },
   transform: {
     '^.+\\.(ts|tsx)$': ['ts-jest', {
-      tsconfig: 'tsconfig.json',
-      jsx: 'react-jsx',
+      tsconfig: 'tsconfig.jest.json',
     }],
   },
   setupFilesAfterEnv: ['<rootDir>/jest.setup.ts'],
