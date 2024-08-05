@@ -49,7 +49,7 @@ interface ProjectFormProps {
   onCancel: () => void;
 }
 
-const ProjectForm: React.FC<ProjectFormProps> = ({ selectedProject, onSubmit, onCancel }) => {
+const ProjectForm = ({ selectedProject, onSubmit, onCancel }: ProjectFormProps) => {
   const [title, setTitle] = useState('');
   const [description, setDescription] = useState('');
   const [image, setImage] = useState('');

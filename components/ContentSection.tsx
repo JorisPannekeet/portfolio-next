@@ -1,12 +1,13 @@
 "use client";
 
+import { StyledLink } from '@/styles/components';
 import styled from 'styled-components';
 
 export const ContentContainer = styled.section`
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height: 100vh;
+  height: 100%;
 `;
 
 export const TextSection = styled.div`
@@ -47,6 +48,7 @@ export const TextSection = styled.div`
   }
 `;
 
+
 const ContentSection = () => {
   return (
     <ContentContainer>
@@ -59,7 +61,7 @@ const ContentSection = () => {
           visually appealing websites. I am passionate about designing
           interfaces that are easy to use and aesthetically pleasing.
         </p>
-        <button>Portfolio</button>
+        <StyledLink href="/portfolio">Portfolio</StyledLink>
       </TextSection>
     </ContentContainer>
   );

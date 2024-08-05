@@ -19,7 +19,10 @@ const ImageSection = styled.div`
     object-fit: cover;
     filter: brightness(0.7);
   }
-
+  i {
+    font-size: 2rem;
+    margin-top: 0.5rem;
+  }
   div {
     position: absolute;
     bottom: 50px;
@@ -66,10 +69,8 @@ const ImageBanner = () => {
         <h3>Joris Pannekeet</h3>
         <span>Frontend Developer</span>
         <ul>
-          <li><a href="#facebook"><i className="fab fa-facebook"></i></a></li>
-          <li><a href="#instagram"><i className="fab fa-instagram"></i></a></li>
-          <li><a href="#github"><i className="fab fa-github"></i></a></li>
-          <li><a href="#linkedin"><i className="fab fa-linkedin"></i></a></li>
+          <li><a target='_blank' href="https://github.com/JorisPannekeet/portfolio-next"><i className="fab fa-github"></i></a></li>
+          <li><a target='_blank' href="https://www.linkedin.com/in/joris-pannekeet-75ba4130/"><i className="fab fa-linkedin"></i></a></li>
         </ul>
       </div>
     </ImageSection>

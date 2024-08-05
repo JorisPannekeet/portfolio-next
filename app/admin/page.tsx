@@ -1,7 +1,6 @@
 "use client";
 import { useState, useEffect } from 'react';
 import { useUser } from '@auth0/nextjs-auth0/client';
-import Link from 'next/link';
 
 import { getProjects, createProject, updateProject, deleteProject, Project } from '../../lib/api';
 import ProjectList from '../../components/admin/ProjectList';
@@ -9,6 +8,7 @@ import ProjectForm from '../../components/admin/ProjectForm';
 import styled from 'styled-components';
 import GlobalStyle from '../../styles/admin';
 import { TextSection, ContentContainer } from '@/components/ContentSection';
+import { StyledLink } from '@/styles/components';
 
 const AdminPageWrapper = styled.div`
   max-width: 1200px;
@@ -27,10 +27,6 @@ const ProjectWrapper = styled.div`
   gap: 20px;
 `;
 
-const StyledLink = styled(Link)`
-  text-decoration: none;
-  color: #fff;
-`;
 
 const Projects = () => {
   const [projects, setProjects] = useState<Project[]>([]);
@@ -86,7 +82,7 @@ const Projects = () => {
         <TextSection>
           <h1>Unauthorized</h1>
           <p>You must be logged in to view this page</p>
-          <button><StyledLink href="/api/auth/login">Login</StyledLink></button>
+          <StyledLink href="/api/auth/login">Login</StyledLink>
         </TextSection >
       </ContentContainer >
     );

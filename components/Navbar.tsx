@@ -52,6 +52,9 @@ const Navbar = () => {
         <StyledLink href="/portfolio" passHref>
           <NavLink>Portfolio</NavLink>
         </StyledLink>
+        <StyledLink href="/about-me" passHref>
+          <NavLink>About me</NavLink>
+        </StyledLink>
         <StyledLink href="/admin" passHref>
           <NavLink>Admin</NavLink>
         </StyledLink>

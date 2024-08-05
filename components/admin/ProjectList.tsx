@@ -64,6 +64,11 @@ const DeleteButton = styled(Button)`
   }
 `;
 
+const ProjectActions = styled.div`
+  display: flex;
+  gap: 10px;
+`;
+
 interface ProjectListProps {
   projects: Project[];
   onEdit: (project: Project) => void;
@@ -82,10 +87,10 @@ const ProjectList = ({ projects, onEdit, onDelete }: ProjectListProps) => {
               <ProjectDescription>{project.description}</ProjectDescription>
             </ProjectDetails>
           </div>
-          <div>
+          <ProjectActions>
             <Button onClick={() => onEdit(project)}>Edit</Button>
             <DeleteButton onClick={() => onDelete(project.id)}>Delete</DeleteButton>
-          </div>
+          </ProjectActions>
         </ProjectCard>
       ))}
     </ListWrapper>

@@ -48,9 +48,10 @@ const Layout = ({ children }: LayoutProps) => {
         <meta name="description" content="I create exceptional experiences for the web." />
         <link
           rel="stylesheet"
-          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
-          integrity="sha384-k6RqeWeci5ZR/Lv4MR0sA0FfDOM84Ck5R57P5Lm7mC2JuL5z5Sxq6ySM2ew7D+t2"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+          integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
           crossOrigin="anonymous"
+          referrerPolicy="no-referrer"
         />
       </head>
       <body>
