@@ -61,7 +61,7 @@ const ContentSection = () => {
           visually appealing websites. I am passionate about designing
           interfaces that are easy to use and aesthetically pleasing.
         </p>
-        <StyledLink href="/portfolio">Portfolio</StyledLink>
+        <StyledLink href="/about-me">More about me</StyledLink>
       </TextSection>
     </ContentContainer>
   );
